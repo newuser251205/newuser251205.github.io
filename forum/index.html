@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> L4D Fandom </title>
+        <link rel="stylesheet" href="forum.css">
+        <script>
+            function  newcom() {
+                var msg = document.getElementById("inputbox");
+                var box = document.getElementById("comments");
+
+                var user = document.createElement("div")
+                var date = new Date()
+                user.textContent = "Гость " + date.toDateString() + " " + date.getHours() + ":" + date.getMinutes();
+
+                var child = document.createElement("div")
+                child.textContent = msg.value;
+
+                box.appendChild(user)
+                box.appendChild(child)
+
+                msg.value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="topmenu">
+
+        </div>
+        <div style="padding-bottom: 200px;"></div>
+        <div class="body">
+            <div class="sidebar">
+                <div class="mayas"> Не первый форум <br>
+                По игре «Left4Dead» </div>
+            </div>
+            <div class="sidebar">
+                <div class="sidebartitle">Меню</div>
+                <div><a href="forum.html">Главная</a></div>
+                <div><a href="characters.html">Персонажи</a></div>
+                <div><a href="locations.html">Локации</a></div>
+            </div>
+            <div class="sidebar">
+                <div class="sidebartitle">Пользователь</div>
+                <div><form action="">
+                    <input type="text" placeholder="Логин">
+                    <input type="password" placeholder="Пароль">
+                </form></div>
+                <div><a href="">Регистрация</a></div>
+                <div><a href="">Авторизация</a></div>
+                <div><a href="">Восстановление</a></div>
+            </div>
+            <div style="grid-row: span 3;">
+                <div class="sidebar">
+                    <div class="sidebartitle">Об игре </div>
+                    Соединённые Штаты Америки охватила эпидемия неизвестного вируса, который вызывает у заражённых им людей 
+                    (именуемых Заражёнными) симптомы бешенства с последующими мутациями тела, превращая некоторых из них в ужасных монстров. 
+                    За две недели эпидемия распространилась на несколько штатов, и власти пошли на крайние меры, начав массовую эвакуацию из 
+                    заражённых зон. Четыре главных героя (именуемые Выжившими) не успели эвакуироваться с остальными и теперь пытаются спастись 
+                    из окружения орд заражённых людей.
+                    <div><img style="display: block; margin: auto;" src="banner.jpg"></div>
+                </div>
+                <br>
+                <div class="sidebar">
+                    <div class="sidebartitle">Популярные треды</div>
+                    <div><a href="">Умер ли Билл?</a></div>
+                    <div><a href="">Какой ваш любимый персонаж?</a></div>
+                    <div><a href="">Его имя Уи́льям «Билл» Овербе́к!</a></div>
+                    <div><a href="">Кто выжил?</a></div>
+                    <div><a href="">НАБОР ИГРОКОВ</a></div>
+                    <div><a href="">Поиск игроков</a></div>
+                    <div><a href="">Ваше мнение по поводу концовки?</a></div>
+                    <div><a href="">Какая часть вам нравится больше</a></div>
+                    <div><a href="">Какую концовку вы ожидали</a></div>
+                    <div><a href="">Интересные факты о L4D2</a></div>
+                </div>
+                <br>
+                <div class="sidebar" id="comments">
+                    <div class="sidebartitle">Комментарии</div>
+                </div>
+                <div class="sidebar">
+                    <div><form action="">
+                        <input type="text" id="inputbox">
+                        <input type="button" value="Отправить" onclick="newcom()">
+                    </form></div>
+                </div>
+                <div class="bottom"> <font color="white">
+                    <div>"Люди стали выбрасывать книги. Этой стране осталось недолго."</div>
+                    <div>Родион Сергеевич</div> <br>
+                    <div class="hrew"><a href="">Политика конфиденциальности и лицензирование</a> | <a href="">О нас</a> | <a href="">Реклама</a> | <a href="">Безопасность</a></div>
+                </div> </font>
+            </div>
+        </div>
+    </body>
+</html>
